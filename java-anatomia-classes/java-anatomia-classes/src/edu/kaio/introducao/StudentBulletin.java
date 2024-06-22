@@ -1,3 +1,4 @@
+package edu.kaio.introducao;
 // arquivo StudentBulletin.java
 
 public class StudentBulletin {
