@@ -5,6 +5,6 @@ public class MinhaClasse {
         String myName = "kaio";
         int myAge = 27;
 
- 
+    }
 
 }
