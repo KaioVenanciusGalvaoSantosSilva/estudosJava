@@ -37,6 +37,36 @@ public class Operadores {
         numero = -numero;
         System.out.println(numero);
 
+        numero++;//incremento
+
+        System.out.println(numero);
+
+        System.out.println(--numero);//decremento
+
+        boolean variavel = true;
+        System.out.println(!variavel); //negação
+
+        
+        //Operador ternário
+
+        int a, b;
+
+        a = 5;
+        b = 6;
+
+        /* EXEMPLO DE CONDICIONAL UTILIZANDO UMA ESTRUTURA IF/ELSE
+        if(a==b)
+        resultado = "verdadeiro";
+        else
+        resultado = "falso";
+        */
+
+        //MESMA CONDICIONAL, MAS DESSA VEZ, UTILIZANDO O OPERADOR CONDICIONAL TERNÁRIO
+        String resultado = (a==b) ? "verdadeiro" : "false";
+
+        System.out.println(resultado);
+
+
     }
 
 }
