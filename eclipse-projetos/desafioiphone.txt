@@ -10,7 +10,6 @@ Métodos: exibirPagina(String url), adicionarNovaAba(), atualizarPagina()
 
 
 
-
 Após a modelagem do diagrama de classe realizei a implementação do código em Java usando os conceitos de Programação Orientada à Objeto.
 
 
