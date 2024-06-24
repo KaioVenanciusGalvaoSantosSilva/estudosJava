@@ -1,5 +1,5 @@
 package praticaHeranca;
 
-public class FacebookMessenger {
+public class FacebookMessenger extends ServicoMensagemInstantanea {
 
 }
