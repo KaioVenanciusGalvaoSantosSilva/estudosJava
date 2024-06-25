@@ -14,7 +14,7 @@ import java.util.List;
 
 public class CarrinhoDeCompras {
 
-    private List<Item> itemList;
+    final private List<Item> itemList;
 
     public CarrinhoDeCompras() {
         this.itemList = new ArrayList<>();
@@ -24,7 +24,7 @@ public class CarrinhoDeCompras {
 
         Item item = new Item(nome, preco, quantidade);
         this.itemList.add(item);
-        System.out.println(quantidade+" item(s) "+ nome +" no preço R$"+preco+ " foi adicionado");
+        System.out.println(quantidade + " item(s) " + nome + " no preço R$" + preco + " foi adicionado");
     }
 
     public void removerItem(String nome) {
@@ -47,18 +47,18 @@ public class CarrinhoDeCompras {
                 valorTotal = valorTotal + valorItem;
 
             }
-            System.out.println("\nO carrinho está no valor de :R$ "+valorTotal);
+            System.out.println("\nO carrinho está no valor de :R$ " + valorTotal);
         } else {
             //throw new RuntimeException("A lista está vazia!");
-            System.out.println("\nO carrinho está no valor de :R$ "+valorTotal);
+            System.out.println("\nO carrinho está no valor de :R$ " + valorTotal);
         }
     }
 
-    public void exibirItens(){
+    public void exibirItens() {
 
-        if (itemList.isEmpty()){
+        if (itemList.isEmpty()) {
             System.out.println("A lista esta vazia!");
-        }else{
+        } else {
             System.out.println(itemList);
         }
 
