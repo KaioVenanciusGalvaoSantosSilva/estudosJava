@@ -1,0 +1,21 @@
+Projeto Iphone de Diagramação de Classe - Interface do iphone de acordo com as Funcionalidades a Modelar:
+
+
+Reprodutor Musical
+Métodos: tocar(), pausar(), selecionarMusica(String musica)
+Aparelho Telefônico
+Métodos: ligar(String numero), atender(), iniciarCorreioVoz()
+Navegador na Internet
+Métodos: exibirPagina(String url), adicionarNovaAba(), atualizarPagina()
+
+
+
+Após a modelagem do diagrama de classe realizei a implementação do código em Java usando os conceitos de Programação Orientada à Objeto.
+
+
+
+Optei por usar de interface pois todos os desenvolvedores de apps acessam as bibliotecas nativas do sistema, para que possa usar os recursos já disponiveis pelos desenvolvedores Apple. Então fiz as interfaces 'Reprodutor', 'Telefonia' e 'Navegador' onde o app (app de terceiro/meu app) pode consumir para implementação nas classes 'ReprodutorMusical', 'AparelhoTelefonico e 'NavegadorInternet'.
+
+
+
+Por fim, os requisitos não foram definidos, por isso não foi vinculado atributos aos diagramas de classe nesse momento, e tão pouco implementados. A ideia desse desafio é validar a compreensão dos pilares de POO e Interface.
