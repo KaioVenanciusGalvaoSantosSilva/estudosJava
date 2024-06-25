@@ -1,7 +1,7 @@
 package list;
 
 public class Item {
-
+    //Classe para construir os itens do carrinho
     final private String nome;
     final private double preco;
     final private int quantidade;

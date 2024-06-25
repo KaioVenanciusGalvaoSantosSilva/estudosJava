@@ -1,7 +1,7 @@
 package list;
 
 public class Compra {
-
+    //Classe para realizar as compras
     public static void main(String[] args) {
         CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
 
