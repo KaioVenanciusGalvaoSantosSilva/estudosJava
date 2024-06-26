@@ -13,9 +13,9 @@ public class CriarListaTarefa {
         listaTarefas.removerTarefa("Lavar o carro");
         listaTarefas.exibirTarefas();
         listaTarefas.marcarTarefaConcluida("Comprar BTC");
-        System.out.println(listaTarefas.obterTarefasConcluidas());
+        System.out.println("Tarefas concluídas: "+listaTarefas.obterTarefasConcluidas());
         listaTarefas.exibirTarefas();
-        listaTarefas.obterTarefasPendentes();
+        System.out.println("Tarefas pendentes: "+listaTarefas.obterTarefasPendentes());
 
 
         listaTarefas.marcarTarefaPendente("Comprar BTC");
