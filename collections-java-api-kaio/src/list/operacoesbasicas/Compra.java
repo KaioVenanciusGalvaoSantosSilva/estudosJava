@@ -2,6 +2,7 @@ package list.operacoesbasicas;
 
 public class Compra {
     //Classe para realizar as compras
+    //Pacote retificado
     public static void main(String[] args) {
         CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
 

@@ -8,7 +8,7 @@ package list.operacoesbasicas;//Desafio 2. Carrinho de Compras: Crie uma classe 
 //removerItem(String nome): Remove um item do carrinho com base no seu nome.
 //calcularValorTotal(): Calcula e retorna o valor total do carrinho, levando em consideração o preço e a quantidade de cada item.
 //exibirItens(): Exibe todos os itens presentes no carrinho, mostrando seus nomes, preços e quantidades.*/
-
+//Pacote retificado
 import java.util.ArrayList;
 import java.util.List;
 

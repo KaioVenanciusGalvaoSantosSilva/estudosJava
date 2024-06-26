@@ -2,6 +2,7 @@ package list.operacoesbasicas;
 
 public class Item {
     //Classe para construir os itens do carrinho
+    //Pacote retificado
     final private String nome;
     final private double preco;
     final private int quantidade;
