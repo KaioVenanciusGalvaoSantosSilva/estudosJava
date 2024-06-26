@@ -1,4 +1,4 @@
-package list;
+package list.operacoesbasicas;
 
 public class Item {
     //Classe para construir os itens do carrinho

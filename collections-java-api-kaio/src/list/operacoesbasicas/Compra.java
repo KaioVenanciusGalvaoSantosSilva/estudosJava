@@ -1,4 +1,4 @@
-package list;
+package list.operacoesbasicas;
 
 public class Compra {
     //Classe para realizar as compras
