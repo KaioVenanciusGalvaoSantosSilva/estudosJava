@@ -10,6 +10,7 @@ public class CriarListaTarefa {
         listaTarefas.adicionarTarefa("Encontrar com amigos");
 
         listaTarefas.contarTarefas();
+        listaTarefas.removerTarefa("Lavar o carro");
         listaTarefas.exibirTarefas();
         listaTarefas.marcarTarefaConcluida("Comprar BTC");
         listaTarefas.obterTarefasConcluidas();
@@ -20,5 +21,6 @@ public class CriarListaTarefa {
         listaTarefas.marcarTarefaPendente("Comprar BTC");
         listaTarefas.exibirTarefas();
         listaTarefas.limparListaTarefas();
+
     }
 }
