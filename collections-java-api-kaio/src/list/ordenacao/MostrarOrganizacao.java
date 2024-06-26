@@ -3,6 +3,7 @@ package list.ordenacao;
 public class MostrarOrganizacao {
 
     public static void main(String[] args) {
+        //Pacote retificado
         OrdenacaoNumeros ordenacaoNumeros = new OrdenacaoNumeros();
 
         ordenacaoNumeros.adicionarNumero(7);
