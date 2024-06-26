@@ -78,8 +78,6 @@ public class ListaTarefas {
     }
 
     public void marcarTarefaConcluida(String descricao) {
-        Set<Tarefa> tarefaConcluida = new HashSet<>();
-
         if (!listaTarefa.isEmpty()) {
             for (Tarefa t : listaTarefa) {
                 if (t.getDescricao().equalsIgnoreCase(descricao)) {
@@ -92,16 +90,25 @@ public class ListaTarefas {
     }
 
     public void marcarTarefaPendente(String descricao) {
-        Set<Tarefa> tarefaPendente = new HashSet<>();
+        Tarefa tarefaMarcarPendente = null;
 
         if (!listaTarefa.isEmpty()) {
             for (Tarefa t : listaTarefa) {
                 if (t.getDescricao().equalsIgnoreCase(descricao)) {
                     t.setConcluida(false);
+                    tarefaMarcarPendente = t;
                 }
             }
         } else {
             System.out.println("Nenhuma Tarefa encontrada!");
+        }
+
+        if (tarefaMarcarPendente != null) {
+            if (tarefaMarcarPendente.isConcluida()) {
+                tarefaMarcarPendente.setConcluida(false);
+            }
+        } else {
+            System.out.println("Tarefa não encontrada na lista.");
         }
     }
 
