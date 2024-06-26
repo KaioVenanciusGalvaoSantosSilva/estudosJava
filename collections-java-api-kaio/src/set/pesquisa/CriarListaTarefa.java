@@ -13,7 +13,7 @@ public class CriarListaTarefa {
         listaTarefas.removerTarefa("Lavar o carro");
         listaTarefas.exibirTarefas();
         listaTarefas.marcarTarefaConcluida("Comprar BTC");
-        listaTarefas.obterTarefasConcluidas();
+        System.out.println(listaTarefas.obterTarefasConcluidas());
         listaTarefas.exibirTarefas();
         listaTarefas.obterTarefasPendentes();
 
