@@ -2,7 +2,7 @@ package list.pesquisa;
 
 public class Calcular {
     public static void main(String[] args) {
-
+        //Pacote retificado
         SomaNumeros somaNumeros = new SomaNumeros();
 
         somaNumeros.adicionarNumero(6);
