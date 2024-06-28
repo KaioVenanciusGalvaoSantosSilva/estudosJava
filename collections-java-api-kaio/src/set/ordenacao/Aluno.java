@@ -5,8 +5,8 @@ import java.util.Objects;
 
 public class Aluno implements Comparable<Aluno> {
 
-    private String nome;
-    private Long matricula;
+    private final String nome;
+    private final Long matricula;
     private double media;
 
     public Aluno(String nome, Long  matricula, double media) {
