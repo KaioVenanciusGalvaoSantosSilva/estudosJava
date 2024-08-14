@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Dicionario {
-    private Map<String, String> dicionario;
+    final private Map<String, String> dicionario;
 
     public Dicionario() {
         this.dicionario = new HashMap<>();

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class AgendaContatos {
 
-    private Map<String, Integer> agendaContatoMap;
+   final private Map<String, Integer> agendaContatoMap;
 
     public AgendaContatos() {
         this.agendaContatoMap = new HashMap<>();
@@ -38,10 +38,11 @@ public class AgendaContatos {
         agendaContatos.adicionarContato("Camila", 12345667);
         agendaContatos.adicionarContato("Kaio", 234564643);
         agendaContatos.adicionarContato("Thais", 13246344);
-
+        agendaContatos.pesquisarPorNome("Kaio");
         agendaContatos.exibirContatos();
 
         agendaContatos.removerContato("Camila");
+
 
         agendaContatos.exibirContatos();
     }
