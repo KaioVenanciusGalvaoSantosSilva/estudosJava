@@ -38,6 +38,7 @@ public class EstoqueProdutos {
             if (p.getPreco() > maiorPreco) {
                 produtoMaisCaro = p;
                 maiorPreco = p.getPreco();
+                p.getNome();
             }
         }
         return produtoMaisCaro;
