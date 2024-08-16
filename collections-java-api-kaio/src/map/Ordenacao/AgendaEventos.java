@@ -11,7 +11,7 @@ public class AgendaEventos {
     public AgendaEventos() {
         this.eventosMap = new HashMap<>();
     }
-
+    
     public void adicionarEvento(LocalDate data, String nomeEvento, String descricaoAtracao) {
         eventosMap.put(data, new Evento(nomeEvento, descricaoAtracao));
     }
