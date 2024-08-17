@@ -1,4 +1,4 @@
-package com.dio.aula_web_api;
+package com.dio.aula.web.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.dio.aula_web_api.controller;
+package com.dio.aula.web.api.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.dio.aula_web_api;
+package com.dio.aula.web.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
