@@ -1,3 +1,4 @@
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -34,6 +35,12 @@ public class Main {
 
         System.out.println(mentoria);
         //System.out.println(formatDateBr(mentoria.getData()));
+
+        Conteudo conteudo1 = new Curso();//POLIMORFISMO
+        Conteudo conteudo2 = new Mentoria();//POLIMORFISMO
+
+        System.out.println("CONTEUDO: "+conteudo1);
+
     }
 
     public static String formatDateBr(LocalDate dataAtual){
