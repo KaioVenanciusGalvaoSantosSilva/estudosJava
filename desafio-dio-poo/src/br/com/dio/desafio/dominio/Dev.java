@@ -11,31 +11,32 @@ public class Dev {
 
     //Polimorfismo para evitar acoplamento (SET sendo diferente de LinkedHashSet)
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>(); //Ordenado, criação e busca eficiente + elemetos únicos
-    private Set<Conteudo> conteudosConcluidos= new LinkedHashSet<>(); //Ordenado, criação e busca eficiente + elemetos únicos
+    private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>(); //Ordenado, criação e busca eficiente + elemetos únicos
 
-    public void inscreverBootcamp(Bootcamp bootcamp){
+    public void inscreverBootcamp(Bootcamp bootcamp) {
 
         this.conteudosInscritos.addAll(bootcamp.getConteudos()); //Adiciona todos os conteudos do bootcamp a inscrição
         bootcamp.getDevsInscritos().add(this);//Adiciona o Dev que se inscreveu
 
     }
-    public void progredir(){
+
+    public void progredir() {
 
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
-        if(conteudo.isPresent()){
+        if (conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
-        }else{
+        } else {
             System.err.println("Você não esta matriculado em nenhum conteúdo!");
         }
 
     }
 
-    public double calcularXp(){
+    public double calcularXp() {
 
         return this.conteudosConcluidos
                 .stream()
-                .mapToDouble(conteudo -> conteudo.calcularXp()).sum();
+                .mapToDouble(Conteudo::calcularXp).sum();
     }
 
     public String getNome() {
